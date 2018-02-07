@@ -1,0 +1,257 @@
+/****************
+GENERAL
+****************/
+
+div{
+    color: black;
+}
+
+a,a:hover,a:visited{
+    text-decoration: none;
+    color: whitesmoke;
+    line-height: normal;
+}
+
+.container{
+    background-color: whitesmoke;
+    width: 100%;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.header{
+    font-family: 'Lobster';
+    margin:0%;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+}
+
+#Text-Login{
+    display: inline-block;
+    background-color: black;
+    float: right;
+    margin-top: 2%;
+    margin-right: 2%;
+    font-size: 2em;
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+#Site-Logo{
+    min-width: 100px;
+    max-width: 7%;
+    margin: 2%;
+    border-radius: 35%;
+}
+
+#Site-Title{
+    color: whitesmoke;
+    margin: auto;
+    margin-left: 0%;
+    padding: 1%;
+    font-size: 7em;
+    line-height: normal;
+    vertical-align: middle;
+}
+
+section{
+    padding-left: 2%;
+    margin: 1% 0 1%;
+}
+
+/************************
+Navigation Bar
+************************/
+
+/*.Nav-Bar ul li*/
+.Nav-Bar{
+    background-color: black;
+    font-family: 'Lobster';
+    font-size: 1.5em;
+    padding-left: 1%;
+    box-shadow: -0em -1em 7em whitesmoke;
+}
+
+.Nav-Bar i{
+    height: 25px;
+}
+
+.Nav-Bar ul img{
+    width: 30px;
+    height: 30px;
+}
+
+ul,li,a{
+    padding: 0;
+    margin: 0;
+    line-height: normal;
+}
+
+.Nav-Bar ul{
+    line-height: normal;
+    text-decoration: none;
+    list-style-type: none;
+}
+.Nav-Bar ul li{
+   display: inline-block;
+    line-height: normal;
+    color: whitesmoke;
+    padding: 14px;
+}
+
+.Nav-Bar ul li:hover{
+    background-color: #717171;
+    position: relative;
+    color: whitesmoke;
+    display: inline-block;
+    line-height: normal;
+    padding: 14px;
+}
+
+.Nav-Bar ul ul{
+    display: none;
+    position: absolute;
+    margin-left: -14px;
+}
+
+.Nav-Bar ul ul li{
+    min-width: 200px;
+    margin: 5px;
+}
+
+.Nav-Bar ul li:hover ul{
+    display: block;
+    margin-top: 14px;
+    min-width: 200px;
+    background-color: black;
+    line-height: normal;
+    position: absolute;
+} 
+
+/****************************
+Side Nav Bar
+****************************/
+
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+/*******************
+Footer
+*******************/
+.About{
+    text-align: center;
+    padding: 5px;
+    font-family: 'Lobster';
+    font-size: 1.5em;
+    color: whitesmoke;
+}
+
+footer{
+    background-color: black;
+    color: whitesmoke;
+}
+
+footer div p{
+    color: whitesmoke;
+}
+
+footer div a{
+    color: whitesmoke;
+    text-decoration: underline;
+}
+
+/***************************
+Font Sizes
+***************************/
+
+.hd1{
+    text-align: center;
+    font-size: 3em;
+    font-family: 'Lobster';
+    margin: 1% auto 0%;
+    padding-left: 1%;
+}
+
+.hd2{
+    text-align: left;
+    font-size: 1.5em;
+    font-family: 'Lobster';
+    margin: 1% auto 0%;
+    padding-left: 1%;
+}
+
+.hd3{
+    text-align: left;
+    font-size: 1.25em;
+    font-family: 'Lobster';
+    margin: 1% 1% 0%;
+    padding-left: 1%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

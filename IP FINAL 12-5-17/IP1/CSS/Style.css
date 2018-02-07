@@ -1,0 +1,235 @@
+body{
+    background-image: url("../Images/BlackWood.jpg");
+    background-size: cover; 
+}
+
+header{
+    width: 100%;
+    font-family: 'Pacifico', cursive;
+    color: whitesmoke;
+}
+
+a,a:hover,a:visited{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+
+form{
+    text-align: center;
+    font-family: 'Lobster',cursive;
+}
+
+input[type=text]{
+    width: 96%;
+    border-radius: 7px;
+}
+
+select{
+    width: 25%;
+    border-radius: 7px;
+    display: inline-block;
+    float: left;
+    margin-left: 2%;
+    margin-right: 1%;
+    height: 42px;
+
+}
+
+input[type=tel]{
+    width: 70%;
+    border-radius: 7px;
+    display: inline-block;
+    float: right;
+}
+
+input[placeholder]{
+    font-family: 'Lobster',cursive;
+}
+
+input[value]{
+    font-family: 'Lobster',cursive;
+}
+
+input[type=password]{
+    width: 96%;
+    border-radius: 7px;
+}
+
+input[type=number]{
+    width: 96%;
+    border-radius: 7px;
+}
+
+input[type=email]{
+    width: 96%;
+    border-radius: 7px;
+}
+
+input[type=submit]{
+    border-radius: 7px;
+    width: 40%;
+    text-align: center;
+}
+input[type=submit]:hover{
+    border-radius: 7px;
+    transition: width  linear 0.25s;
+    width: 70%;
+    text-align: center;
+}
+
+label p{
+    font-family: 'Lobster',cursive;
+    font-size: 2em;
+    padding-left: 2%;
+    margin: auto;
+    display: inline-block;
+    float: left;
+    color: whitesmoke !important;
+}
+
+p{
+    margin: 0;
+    padding: 0;
+    line-height: normal;
+    display: inline-block;
+}
+
+/*************
+Classes
+*************/
+.container{
+    padding-top: 1%;
+    width: 100%;
+}
+
+.HomePage{
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+}
+
+.HomePage a img{
+    max-width: 100px;
+    border-radius: 35%;
+    
+}
+
+.HomePage a span{
+    line-height: normal;
+    font-size: 5em;
+    vertical-align: middle;
+    margin-top: 3%;
+    padding: 1%;
+}
+
+.NavBar{
+    font-size: 2em;
+    margin-left: 1%;
+    padding: 1%;
+}
+.w3-button{
+    width: 250px;
+}
+.w3-dropdown-hover{
+    width: 250px;
+    background-color: transparent !important;
+    color: whitesmoke !important;
+}
+
+
+.w3-dropdown-hover:hover{
+    width: 250px;
+}
+
+.w3-dropdown-content{
+    min-width: 250px;
+    position: absolute;
+}
+.w3-dropdown-content a{
+    color: ghostwhite;
+}
+
+
+
+.Form-Header{
+    font-size: 3em;
+    font-family: 'Lobster', cursive;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    color: whitesmoke !important;
+}
+
+.AvatarImg{
+    width: 100%;
+    text-align: center;
+}
+
+.AvatarImg img{
+    max-width:250px; 
+    margin: 1% auto 1%;
+    display: inline-block;
+    border-radius: 100%;
+}
+
+.login{
+    margin-right: 2%;
+}
+
+
+.Lobster{
+    font-family: 'Lobster', cursive;
+}
+
+.pacifico{
+    font-family: 'Pacifico', cursive;
+}
+
+.satisfy{
+    font-family: 'Satisfy', cursive;
+    font-size: 1.1em;
+}
+
+.hd1{
+    font-size: 3em;
+    color: dimgray;
+}
+
+
+.hd2{
+    font-size: 2.5em;
+    color: dimgray;
+    padding: 0;
+}
+
+.hd3{
+    font-size: 1.7em;
+    color: dimgray;
+}
+
+.center{
+    text-align:center;
+    display:inline-block;
+    margin:auto;
+     width:100%;
+    color: whitesmoke;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
