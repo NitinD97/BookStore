@@ -1,6 +1,6 @@
 <?php
 DEFINE('DB_USER','IP');
-DEFINE('DB_PASSWORD','Dhiman@123');
+DEFINE('DB_PASSWORD','Passwd');
 DEFINE('DB_HOST','localhost');
 DEFINE('DB_NAME','test');
 
