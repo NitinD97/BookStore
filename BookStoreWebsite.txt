@@ -1,0 +1,108 @@
+1. mysqli_connect.php
+	Ye file DB se connect karne ke lie hai
+	Isme 4 lines main hai:
+		1. DEFINE('DB_USER','IP'); 
+			"IP" sql user ka naam hai.
+		2. DEFINE('DB_PASSWORD','Passwd');
+			"Passwd",  ye password hai, "IP" user ka.
+		3. DEFINE('DB_HOST','localhost');
+			"localhost", ye define kar rha hai ki local host par DB chalega.
+		4. DEFINE('DB_NAME','test');
+			"test", ye database ka naam hai...Iske andar tables hai.
+	is file ko call karenge jab v hume DB ko access karna hai...
+
+2. session.php
+	ye file user ka login session maintain karne ke lie hai, ki user ne login kar lia hai aur kisi link par click karne se logout na ho.
+	isse har page se phle call karenge check karne ke lie ki user login hai.
+
+3. tables:
+	1. signup - login user ka record rakhne ke lie
+		FirstName,LastName,Email,Username,CountryCode,ContactNo,Password
+		password - md5() encryption mein stored hai.
+
+	2. bookinfo - books ka data maintain karne ke lie. 
+		BookName,Category,BookImagePath,Edition,Price,token,Username,Email,BookImageID,BookImagePath
+		Token - primary key.
+
+	3. address - user ka pin-code aur address is table mein jaega.
+		koi primary key ni hai.
+		username aur email se query karenge
+
+4. password:
+	user ka login password aise seved hai:
+		$pass1 = md5(stripslashes(trim($_POST["pass1"])));
+			- md5(): mein encrypted password hai
+			- strpslashes: islie use kia hai taki koi "\n" jaisa koi html, ya php, input parameter se pass na kar pae. Just for security purposes
+			- trim: to remove space at the start and end of the password, taki encryption wrong na ho.
+
+5. localhost:
+	ye portno 1234 par chalaya tha.
+	1234 par xampp server chall rha hai.
+	setting ki hai
+	https://www.youtube.com/watch?v=xdvVKywGlc0
+	is link mein setting defined hai.
+
+6. Login:
+	agar user already registered hai....
+	toh user ka login time pe jo password aega, use md5() mein convert karenge. aur DB mein stored md5() se compare karenge
+	username, email unique hai...
+	"post" method used hai login ke lie.
+
+7. Signup:
+	server.php sirf signup ke lie hai.
+	"post" method used hai
+
+8. Book image:
+	book image 1 folder mein upload hogi, DB mein uska path hoga.
+	$target_path = "Images/UserImages/".$BookImageID;
+	is path par upload hogi.
+	agar display karni hai to is path ko chak ke hi display kar denge
+
+9. 	user apna password v change kar sakta hai...
+	email aur contact ifo v change kar sakta hai....
+
+10. book ki category click karne ke lie cookies ka use ho rha hai.
+	agar novel pe click kia toh, ek cookie save karenge, "Category" naam se jiski value hogi "Novel".
+	click karne ke baad BuyOldBook.php par jaega..... aur cookie jiska naam hai "Category" check karenge, usme value hogi "Novel"
+	phir bookinfo table mein category novel ke hisaab se query kar ke books display karenge
+	
+	javascript se cookie save karenge....
+	nye page pe jaege.....
+	php se get karenge, fir DB mein query karke output....
+	query ka result array mein aega, kyuki multiple books ho sakti hai...
+	to sab display kar denge... 
+
+	Novel par click karte hi....
+
+		<script type="text/javascript">
+            function CatEng()
+            {
+                document.cookie = "Category=Engineering";
+            }
+            function CatNovel()
+            {
+                document.cookie = "Category=Novel";
+            }
+            
+        </script>
+	Buy old book par ane ke baad
+	cookies ki script: 
+        <?php
+            $Category =  $_COOKIE['Category'];
+         
+            //echo "$Category";
+        ?>
+
+11. aur 1 AboutUs.php page hai...us mein to made by ki info padi hai....
+
+12. DB = MySQL
+	Server = Xampp Server
+	Languages = PHP, JS, HTML, CSS
+	CSS file = Style.css (personally made), W3.css(W3 schools se), bootmin.css (bootstrap) 
+
+
+
+
+
+
+
